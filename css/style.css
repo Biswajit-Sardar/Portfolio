@@ -23,42 +23,102 @@ nav{
     display: flex;
     margin-top: 10px;
 
+}.nav-box{
+    overflow: visible;
 }
 .nav-box{
-    display: flex;
-    align-items: center;
+    display: flex; 
+    align-items: center; 
     margin-right: 20px;
-    margin-left: auto;
+    margin-left: auto; 
     background-color: rgb(255, 255, 255);
-    border: 5px solid rgb(91, 105, 89);
-    border-radius: 20px;
-    padding: 10px;
-    padding-right: 40px;
-    padding-left: 40px;
-
+    border: 5px solid rgb(91, 105, 89); 
+    border-radius: 20px; 
+    padding: 10px; 
+    padding-right: 40px; 
+    padding-left: 40px; 
     justify-content: center;
+    width: 100%;
     
 }
 
 .nav-box a{
-    background-color: rgb(181, 181, 181);
-    color: rgb(255, 255, 255);
-    margin: 0 20px;
-    padding: 5px 10px;
-    border: 2px solid rgb(183, 183, 183);
+    position: relative;
+    padding: 8px 18px;
+    margin: 0 15px;
+    color: #fff;
+    background: #b5b5b5;
     border-radius: 10px;
-    text-align: center;
+    text-decoration: none;
     font-weight: 600;
-    transition: all 0.6s linear;
+    overflow: visible;
+    z-index: 1;
+}
+
+.nav-box a::before{
+    content: "";
+    position: absolute;
+    inset: -4px;
+    background: linear-gradient(
+        90deg,
+        #03a9f4,
+        #f441a5,
+        #ffeb3b,
+        #03a9f4
+    );
+    background-size: 400%;
+    border-radius: 14px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.nav-box a::after{
+    content: "";
+    position: absolute;
+    inset: -6px;
+    background: linear-gradient(
+        90deg,
+        #03a9f4,
+        #f441a5,
+        #ffeb3b,
+        #03a9f4
+    );
+    background-size: 400%;
+    filter: blur(18px);
+    border-radius: 14px;
+    z-index: -2;
+    opacity: 0;
+}
+
+.nav-box a:hover::before,
+.nav-box a:hover::after{
+    opacity: 1;
+    animation: glow 6s linear infinite;
 }
 
 .nav-box a:hover{
-    background-color: rgb(255, 255, 255);
-    color:rgb(91, 105, 89);
-    margin: 0 20px;
-    padding: 5px 10px;
-    border: 2px solid rgb(91, 105, 89);
-    border-radius: 10px;
-    text-align: center;
-    font-weight: 600;
+    background: #fff;
+    color: #000;
+}
+
+/* animation */
+@keyframes glow{
+    0%{ background-position: 0%; }
+    100%{ background-position: 400%; }
+}
+
+/*
+.big-box{
+    display: block;
+
+}
+*/
+.big-box1{
+    display: flex;
+    background-color: #03a9f4;
+}
+.big-box1 img{
+    width: 30%;
+    height: auto;
+    
 }

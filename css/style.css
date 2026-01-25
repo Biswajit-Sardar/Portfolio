@@ -118,7 +118,9 @@ nav{
     background-color: #03a9f4;
 }
 .big-box1 img{
-    width: 30%;
+    width: 35%;
     height: auto;
-    
+    margin-left: 2%;
+    margin-top: -3%;
+
 }

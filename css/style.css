@@ -186,4 +186,67 @@ nav{
 }
 .link2 a{
     margin-right: 14px;
+    
+    display: inline-block;
+
+
 }
+.link2 a:hover{
+    margin-right: 14px;
+    color: #2f03f4;
+    animation: kol 2s ease infinite;
+}
+
+@keyframes kol{
+    0%{
+        transform: rotatey(0deg);
+    }
+    100%{
+        transform: rotatey(360deg);
+    }
+}
+
+/*why me*/
+
+.boxs{
+    background-color: #2abcff;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.boxs1{
+    margin: 3%;
+    background-color:  #a1e1ff ;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.min_boxs1{
+    font-weight:600;
+    font-size: 50px;
+}
+
+.min_boxs2{
+    font-weight:600;
+    font-size: 30px;
+}
+
+/*about section*/
+
+.adout{
+    
+    background-color: #03a9f4;
+}
+
+.about_hedding{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+

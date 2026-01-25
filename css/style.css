@@ -235,7 +235,7 @@ nav{
     font-size: 30px;
 }
 
-/*about section*/
+/*about section
 
 .adout{
     
@@ -248,5 +248,98 @@ nav{
     font-size: 60px;
     font-weight: 700;
 }
+.about_content{
+    display: flex;
+}
+
+.about_content img{
+    width: 40%;
+    margin-top: -190px;
+   height: 40%;
+   border: 2px solid #2f03f4;
+   border-radius: 200px;
+   
+}
+.about_content .boxs1{
+    width: 66%;
+    height: 40%;
+    margin-left: -50px;
+    font-size: 28px;
+    text-align:justify;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
+/* ===== About Section ===== */
+.adout{
+    width: 100%;
+    padding: 60px 2%;
+    background:#03a9f4;
+    padding-right: 10px;
+}
+
+/* Heading */
+.about_hedding{
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+/* Content layout */
+.about_content{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Image */
+.about_content img{
+    width: 30%;
+    height: 15%;
+    object-fit: cover;          /* image crop */
+    object-position: top;
+    border-radius: 2000px;
+    box-shadow: 0 10px 25px #a1e1ff ;
+   
+}
+
+/* Text box */
+.about_content .boxs1{
+    background: #03a9f4;
+    padding: 3px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px #a1e1ff ;
+    
+}
+
+/* Paragraph */
+.boxs1 p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px){
+    .about_content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_content img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .boxs1 p{
+        text-align: left;
+        text-align: justify;
+    }
+}

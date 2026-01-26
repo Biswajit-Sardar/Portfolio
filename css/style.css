@@ -50,7 +50,7 @@ nav{
     padding: 10px 23px;
     margin: 0 15px;
     color: white;
-    background: #650081;
+    background: #870ca9;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
@@ -523,4 +523,130 @@ nav{
 }
 
 
+
+.cards{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    margin: 2px;
+}
+.scard{
+    margin: 19px;
+    padding: 10px;
+    background-color: #650081;
+    border-radius: 15px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 210px;
+    
+}
+.scard h3{
+    font-size: 25px ;
+    text-align: center;
+
+}
+.scard p{
+    margin-top: 5px;
+    font-size: 15px;
+    text-align:justify;
+}
+
+.scard button{
+    color: #11191d;
+    margin-top: 7px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 4px solid white;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.scard button:hover{
+    border: 4px solid white;
+    background-color: #650081;
+    color: white;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    margin: 2px;
+}
+
+/* wrapper */
+.sscard{
+    position: relative;
+    display: inline-block;
+}
+
+/* back copy card - same size */
+.sscard::before{
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    right: 19px;
+    bottom: 19px;
+    background-color: white;
+    border-radius: 15px;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+/* hover -> only back rotates */
+.sscard:hover::before{
+    transform: rotate(20deg);
+}
+
+/* front card */
+.scard{
+    margin: 19px;
+    padding: 10px;
+    background-color: #650081;
+    border-radius: 15px;
+    height: 210px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.scard h3{
+    font-size: 25px ;
+    text-align: center;
+}
+
+.scard p{
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.scard button{
+    color: #11191d;
+    margin-top: 7px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 4px solid white;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.scard button:hover{
+    border: 4px solid white;
+    background-color: #650081;
+    color: white;
+}
+
+.scard p::first-letter{
+    margin-top: 5px;
+    font-size: 15px;
+}
 

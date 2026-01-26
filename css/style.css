@@ -118,6 +118,8 @@ nav{
 
 .big-box1{
     display: flex;
+    margin-top: -20px;
+    padding-bottom: -20px;
 }
 .con{
     margin-right: 3%;
@@ -126,15 +128,15 @@ nav{
     background: radial-gradient(#650081,#650081,#650081,#650081,transparent,transparent,transparent);
     margin-bottom: 0px;
     padding-bottom: 03;
+    height: 580px;
 }
 .con img{
-    width: 570px;
+    width: 450px;
 }
 
 .box{
-    width: 800px;
-    
-    padding-top: 100px;
+    width: 900px;
+    padding-top: 10px;
     margin: 2%;
     margin-left: 2%;
 /*
@@ -142,6 +144,7 @@ nav{
     margin-bottom: 03px;
     border-radius: 15px;
     padding-left: 20px;
+    height: 500px;
     
 
     
@@ -227,8 +230,7 @@ nav{
 
 .link2 ul {
   display: flex;
-  top: 50%;
-  left: 50%;
+ 
   transform: translate(-50%, -50%);
 }
 
@@ -237,11 +239,11 @@ nav{
 }
 
 .link2 ul li a {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-color: #fff;
   text-align: center;
-  line-height: 80px;
+  padding-top: 10px;
   font-size: 35px;
   margin: 0 10px;
   display: block;
@@ -298,8 +300,9 @@ nav{
 
 .link2{
     margin: 90px;
-    margin-left: 230px;
+    margin-left: 260px;
 }
+
 
 
 
@@ -343,7 +346,7 @@ nav{
 }
 
 .boxs{
-    margin-top: 10px;
+    margin-top: -50px;
     display: flex;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -387,12 +390,14 @@ nav{
     text-align: center;
     font-size:55px;
     font-weight: 700;
+    
 }
 .about_content{
     display: flex;
 }
 .about_content img{
     width: 500px;
+    
 }
 
 

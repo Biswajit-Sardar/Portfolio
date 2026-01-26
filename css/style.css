@@ -382,7 +382,7 @@ nav{
 }
 
 .adout{
-    background-color: #00fff7;
+    background-color: #11191d;
 
 }
 .about_hedding{
@@ -390,18 +390,137 @@ nav{
     text-align: center;
     font-size:55px;
     font-weight: 700;
+    color: white;
     
 }
 .about_content{
     display: flex;
 }
+.about-pic{
+    background-color:transparent;
+    border-radius: 20px;
+    height: 320px;
+    margin-top: 190px;
+    width: 350px;
+    margin-left: -15px;
+
+}
 .about_content img{
-    width: 500px;
+    width: 400px;
+    background: transparent;
+    margin-left: -50px;
+    margin-top: -150px;
+    
+}
+.con1{
+    height: 400px;
+    width:300px ;
+    margin-top: -90px;
+    margin-left: 35px;
+    
     
 }
 
+.about-pic::before{
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 17px;
+    background: linear-gradient(
+        90deg,
+        #00fff7,
+        #ff00ff,
+        #86ff64
+    );
+    animation: borderMove 3s linear infinite;
+    z-index: -1;
+}
 
+/* cut center so only border shows */
+.about-pic::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 12px;
+   
+    z-index: -1;
+}
 
+@keyframes borderMove{
+    0%{ filter: hue-rotate(0deg); }
+    100%{ filter: hue-rotate(360deg); }
+}
+
+.about_box{
+    margin-top: 67px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.about_box p{
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-weight: 600;
+    color: #f2f2f2;
+
+}
+
+/* highlight first line */
+.about_box p::first-letter{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00fff7;
+}
+
+/* small glow on hover */
+.about_box:hover p{
+    text-shadow: 0 0 6px rgba(0,255,247,0.5);
+    transition: 0.4s;
+}
+
+.about_box{
+    position: relative;
+    border-radius: 15px;
+    background: #650081;   /* চাইলে change করতে পারো */
+    padding: 25px;
+    color: white;
+    z-index: 1;
+}
+
+/* animated border */
+.about_box::before{
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 17px;
+    background: linear-gradient(
+        90deg,
+        #00fff7,
+        #ff00ff,
+        #00fff7
+    );
+    animation: aboutBorderMove 3s linear infinite;
+    z-index: -1;
+}
+
+/* inside cover so border stays inside radius */
+.about_box::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 12px;
+    background: #650081; /* same as box bg */
+    z-index: -1;
+}
+
+@keyframes aboutBorderMove{
+    0%{ filter: hue-rotate(0deg); }
+    100%{ filter: hue-rotate(360deg); }
+}
 
 
 

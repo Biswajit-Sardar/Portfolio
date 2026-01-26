@@ -706,3 +706,21 @@ nav{
         width: 70%;
     }
 }
+
+
+
+.project_box{
+    display: flex;
+    width: 30%;
+    margin-left: 3%;
+    
+}
+.project_box img{
+    width: 400px;
+    height: 230px;
+    margin: 5%;
+}
+.project_box video{
+    width: 100%;
+    margin: 5%;
+}

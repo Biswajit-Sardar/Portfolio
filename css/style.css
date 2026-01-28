@@ -701,22 +701,6 @@ nav{
     }
 }
 
-.project_box{
-    display: flex;
-    width: 30%;
-    margin-left: 3%;
-}
-
-.project_box img{
-    width: 25rem;          /* 400px */
-    height: 14.375rem;     /* 230px */
-    margin: 5%;
-}
-
-.project_box video{
-    width: 100%;
-    margin: 5%;
-}
 
 
 
@@ -803,4 +787,37 @@ nav{
 .message-buttons{
     display: flex;
     gap: 0.625rem;           /* 10px */
+}
+
+
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    background-color:rgb(0, 0, 0) ;
+    margin: 20px;
+    gap: 10px;
+    color: white;
+
+}
+.project img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255) ;
+    border-radius: 50px;
+    justify-content: center;
+    
+}
+.project{
+    background: #00fff7;
+    margin: 0;
+    padding: 0.625rem;
+    justify-content: center; 
+    align-items: center;
+}
+.pojects div{
+    color: white;
+    font-size: 32px;
 }

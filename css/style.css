@@ -1400,7 +1400,6 @@ nav{
     }
 
 
-    /*Project section*/
     .projects{
         margin-top: 130px;
         flex-direction: column;
@@ -1415,4 +1414,49 @@ nav{
     .projects .project{
         margin-top: 15px;
     }
+}
+
+
+
+
+
+@media (max-width:1850px) and (min-width:451px){
+    .logo{
+    font-size:32px;
+    font-weight:bold;
+    }
+
+
+    .nav-box{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:40%;
+        height:100vh;
+        background:#000;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:30px;
+        transition: right 0.4s ease-in-out;
+        z-index:100;
+    }
+
+    .nav-box.active{
+        right:0;
+    }
+
+    #open-menu-btn{
+        display:block;
+    }
+
+    .nav-box.active ~ #close-menu-btn{
+        display:block;
+        position:fixed;
+        top:20px;
+        right:20px;
+        z-index:101;
+        margin-right: 10px;
+    }
+
 }

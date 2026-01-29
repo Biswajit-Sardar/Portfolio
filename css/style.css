@@ -1111,10 +1111,6 @@ nav{
     position:relative;
 }
 
-.logo{
-    font-size:22px;
-    font-weight:bold;
-}
 
 /* ===== MENU LINKS ===== */
 .nav-box{
@@ -1147,7 +1143,12 @@ nav{
 }
 
 /* ================= MOBILE VIEW ================= */
-@media (max-width:768px){
+@media (max-width:450px){
+    .logo{
+    font-size:22px;
+    font-weight:bold;
+    }
+
 
     .nav-box{
         position:fixed;
@@ -1181,5 +1182,122 @@ nav{
         right:20px;
         z-index:101;
         margin-right: 10px;
+    }
+
+
+    /*main section*/
+    .big-box1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 90%;
+        height: 350px;
+        margin: 20px 0;
+    }
+    .box1{
+
+        font-size: 20px;
+    }
+    .box2{
+        font-size: 32px;
+        justify-content: center;
+        width: 300px;
+        height: auto;
+        padding: 1px 20px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .box31{
+        font-size: 20px;
+    }
+    .box32{
+        font-size: 28px;
+    }
+    .link{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 15px;
+        justify-content: center
+
+
+
+    }
+    .link a{
+        padding: 10px 20px;
+        padding-left: 40px;
+    }
+    .link a:hover{
+        padding: 10px 20px;
+        padding-left: 40px;
+    }
+    .link2{
+        margin-left: 90px;
+
+    }
+    
+    .con{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 100px;
+    }
+    .con img{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .group img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .boxs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+
+    }
+    .boxs1{
+        display: flex;
+    }
+    .min_boxs1{
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    .min_boxs2{
+        font-size: 22px;
+        margin-top: auto;
+        margin-right: 10px;
+
+    }
+
+
+    /*About section*/
+    .about_hedding{
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+    .about_content{
+        flex-direction: column;
+    }
+    .con1{
+       margin-top: 0px;
+    }
+    
+    .about-pic{
+        margin-top: 20px;
+    }
+    .con1 div{
+        margin-top: 20px;
+    }
+    .about-pic img{
+        margin-top: -13px;
+    }
+    .about_box{
+        margin-top: -50px;
+    }
+    .about_box p{
+        
     }
 }

@@ -313,7 +313,38 @@ nav{
 
 /*tool Animation section*/
 
+.animation{
+    margin: 0px  auto;
+    width: 96%;
+    display: flex;
+    margin-bottom: 40px;
+    overflow-x: auto;
+}
+.animation::-webkit-scrollbar{
+    display: none;
 
+}
+.group{
+    display: flex;
+    gap: 20px;
+    animation: spin 40s infinite linear;
+    
+    
+}
+.pic{
+    height: 100px;
+    width: auto;
+    justify-content: center;
+    
+}
+@keyframes spin{
+    from{
+        translate: 0;
+
+    } to{
+        translate: -100%;
+    }
+}
 
 
 

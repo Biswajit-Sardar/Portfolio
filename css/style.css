@@ -1283,6 +1283,7 @@ nav{
     }
     .con1{
        margin-top: 0px;
+    
     }
     
     .about-pic{
@@ -1290,14 +1291,128 @@ nav{
     }
     .con1 div{
         margin-top: 20px;
+        margin-right: 5%;
     }
     .about-pic img{
         margin-top: -13px;
     }
     .about_box{
-        margin-top: -50px;
+        margin-top: -100px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .about_box p{
+        font-size: 12px;
+        font-weight: 500;
+
+    }
+    
+    /*service section*/
+    
+    .scard{
+        position: absolute;
+        width: 160px;
+        height: 200px;
+        background: #6a1b9a;
+        color: white;
+        border-radius: 18px;
+        padding: 16px;
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+
+
+    /* 4 front */
+    .scard:nth-child(4){
+        z-index: 7;
+        transform: translate(0, 0);
+        width: 150px;
+        height: 200px;
+    }
+
+    .scard:nth-child(3){
+        z-index: 6;
+        transform: translate(-60px, -20px);
+    }
+    .scard:nth-child(5){
+        z-index: 6;
+        transform: translate(60px, -20px);
+    }
+
+    .scard:nth-child(2){
+        z-index: 5;
+        transform: translate(-100px, -40px);
+    }
+    .scard:nth-child(6){
+        z-index: 5;
+        transform: translate(100px, -40px);
         
+    }
+
+    .scard:nth-child(1){
+        z-index: 4;
+        transform: translate(-130px, -60px);
+    }
+    .scard:nth-child(7){
+        z-index: 4;
+        transform: translate(140px, -60px);
+    }
+
+    .scard:hover{
+        z-index: 99;
+        transform: translate(0, -90px) scale(1.05);
+    }
+    .stack{
+        justify-content: center;
+        width: 100%;
+        margin-left: 135px;
+        margin-right: auto;
+    }
+    .stack .scard{
+        padding: 2px 2px;
+        width: 150px;
+        height: 200px;
+    }
+     .stack .scard h3{
+        font-size: 20px;
+
+     }
+     .stack .scard p{
+        margin-top: 0;
+        margin: 10px 2px;
+        font-size: 10px;
+        
+
+     }
+    .stack .scard button{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+
+    /*Skills section*/
+    .skill_box{
+        margin-top: -60px;
+    }
+    .skill{
+        margin-top: -50px;
+    }
+
+
+    /*Project section*/
+    .projects{
+        margin-top: 130px;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+        
+    }
+    .projects{
+        margin-top: -40px;
+    }
+    .projects .project{
+        margin-top: 15px;
     }
 }

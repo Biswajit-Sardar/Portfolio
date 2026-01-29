@@ -1417,9 +1417,6 @@ nav{
 }
 
 
-
-
-
 @media (max-width:1850px) and (min-width:451px){
     .logo{
     font-size:32px;
@@ -1459,4 +1456,7 @@ nav{
         margin-right: 10px;
     }
 
+    .link2{
+        margin-left: 195px;
+    }
 }

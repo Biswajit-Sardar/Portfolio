@@ -185,6 +185,8 @@ nav{
     font-size: 3.875rem;        /* 62px */
     color: white;
     font-weight: 600;
+    height: 3.875rem;
+    color: #029500;
 }
 
 .link{
@@ -1214,6 +1216,7 @@ nav{
     }
     .box32{
         font-size: 28px;
+        height: 28px;
     }
     .link{
         display: grid;

@@ -943,3 +943,122 @@ nav{
 
 }
 
+
+
+
+/*project section*/
+.bigprobox{
+    margin-top: -3.125rem;   /* -50px */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem; 
+    justify-content: center;
+}
+.headding{
+    font-size: 32px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}.probox{
+    width: 480px;
+    height: auto;
+    background: #650081;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px  rgba(0,0,0,0.12);
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid #ffffff;
+
+}
+
+.probox:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+/* Video */
+.probox video{
+    width: 100%;
+    height: 100%px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Project info */
+.project-info{
+    padding: 16px;
+}
+
+.project-info h3{
+    margin: 0 0 14px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.linker{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.linker i{
+    background-color: white;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+.linker i:hover{
+    background-color:transparent;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 50px;
+    border: 5px solid white;
+    color: white;
+}
+
+/* GitHub icon */
+.icon-link{
+    width: 42px;
+    height: 42px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.icon-link img{
+    width: 20px;
+    filter: invert(1);
+}
+
+
+.icon-link:hover{
+    background: #333;
+    transform: scale(1.1);
+}
+
+/* Live demo button */
+.demo-link{
+    padding: 9px 18px;
+    background: #650081;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border: 3px solid white;
+}
+
+.demo-link:hover{
+    background: #ffffff;
+    transform: translateY(-2px);
+    color: #650081;
+
+}
+.probox{
+    margin: 100px;
+}

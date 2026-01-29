@@ -1062,3 +1062,124 @@ nav{
 .probox{
     margin: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+
+/* ===== NAV BASIC ===== */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#111;
+    color:#fff;
+    position:relative;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* ===== MENU LINKS ===== */
+.nav-box{
+    display:flex;
+    gap:25px;
+}
+
+.nav-box a{
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+}
+
+/* ===== BUTTONS ===== */
+#open-menu-btn,
+#close-menu-btn{
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+}
+
+/* default */
+#open-menu-btn{
+    display:none;
+}
+#close-menu-btn{
+    display:none;
+}
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width:768px){
+
+    .nav-box{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:40%;
+        height:100vh;
+        background:#000;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:30px;
+        transition: right 0.4s ease-in-out;
+        z-index:100;
+    }
+
+    /* menu open */
+    .nav-box.active{
+        right:0;
+    }
+
+    #open-menu-btn{
+        display:block;
+    }
+
+    /* close button only when menu open */
+    .nav-box.active ~ #close-menu-btn{
+        display:block;
+        position:fixed;
+        top:20px;
+        right:20px;
+        z-index:101;
+        margin-right: 10px;
+    }
+}

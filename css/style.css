@@ -311,6 +311,8 @@ nav{
 }
 
 
+/*tool Animation section*/
+
 
 
 
@@ -557,10 +559,7 @@ nav{
     
 }
 
-/* common card */
-.service{
-    margin-top: 20px;
-}
+
 .scard{
     position: absolute;
     width: 260px;
@@ -591,20 +590,21 @@ nav{
 
 .scard:nth-child(2){
     z-index: 5;
-    transform: translate(-250px, -40px);
+    transform: translate(-300px, -40px);
 }
 .scard:nth-child(6){
     z-index: 5;
-    transform: translate(250px, -40px);
+    transform: translate(300px, -40px);
+    
 }
 
 .scard:nth-child(1){
     z-index: 4;
-    transform: translate(-350px, -60px);
+    transform: translate(-450px, -60px);
 }
 .scard:nth-child(7){
     z-index: 4;
-    transform: translate(350px, -60px);
+    transform: translate(450px, -60px);
 }
 
 .scard:hover{
@@ -615,8 +615,7 @@ nav{
 
 
 .service{
-    background:#11191d;
-    padding: 100px 0;
+   margin-top: 10px;
 }
 
 .cards{
@@ -634,7 +633,8 @@ nav{
     position: absolute;
     width: 300px;
     height: 260px;
-    padding: 25px;
+    padding: 10px;
+    padding-top: 20px;
     border-radius: 18px;
     background: #650081;
     color: #fff;
@@ -662,13 +662,42 @@ nav{
     z-index: -1;
 }
 
+
 @keyframes serviceBorder{
     0%{filter:hue-rotate(0deg);}
     100%{filter:hue-rotate(360deg);}
 }
-
-
-
+.scard h3{
+ font-size: 25px;
+}
+.scard p{
+    font-size: 15px;
+    margin: 16px;
+    margin-top: 32px;
+}
+.scard button{
+    padding: 12px 20px;
+    border: 5px solid  #ffffff;
+    background-color: #650081;
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.scard:nth-child(6) p{
+    margin-top: 2px;
+}
+.scard:nth-child(1) p{
+    margin-top: 2px;
+}
+.scard:nth-child(7) p{
+    margin-top: 45px;
+}
+.scard button:hover{
+    background-color: white;
+    color: #000;
+    font-weight: 700;
+}
 
 
 

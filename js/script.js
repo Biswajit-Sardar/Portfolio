@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //const cursorSpan = document.getElementById('cursor');
 
             // Array of words to type out
-            const words = ["Web Developer", "Designer", "Creator", "Innovator"];
+            const words = ["Web Developer", "Data Science Engineer", "Power BI designer"];
             let wordIndex = 0; 
             let charIndex = 0; 
             let isDeleting = false; 

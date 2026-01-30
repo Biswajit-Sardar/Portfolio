@@ -1418,6 +1418,16 @@ nav{
     .projects .project{
         margin-top: 15px;
     }
+    .bigprobox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .probox{
+        width: 90%;
+        margin-bottom: -30px;
+    }
 }
 
 

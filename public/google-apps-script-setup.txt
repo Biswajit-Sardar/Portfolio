@@ -1,0 +1,80 @@
+GOOGLE SHEETS FORM SUBMISSION SETUP
+====================================
+
+Follow these steps to connect your contact form to Google Sheets:
+
+STEP 1: Open your Google Sheet
+------------------------------
+Go to: https://docs.google.com/spreadsheets/d/1fUIeBLn_60sOxIQrpnfk-3-sncesZKHJR9lS9BrAqBA/edit
+
+STEP 2: Add Headers to your Sheet
+---------------------------------
+In Row 1, add these column headers:
+A1: Name
+B1: Email
+C1: Subject
+D1: Message
+E1: Timestamp
+
+STEP 3: Open Apps Script
+------------------------
+1. Click on "Extensions" in the menu bar
+2. Click on "Apps Script"
+
+STEP 4: Replace the code with this:
+-----------------------------------
+Copy and paste this code into the Apps Script editor:
+
+```javascript
+function doPost(e) {
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+    
+    sheet.appendRow([
+      data.name,
+      data.email,
+      data.subject,
+      data.message,
+      data.timestamp
+    ]);
+    
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: 'success' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: 'error', error: error.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function doGet(e) {
+  return ContentService
+    .createTextOutput(JSON.stringify({ result: 'success', message: 'GET request received' }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+```
+
+STEP 5: Deploy as Web App
+-------------------------
+1. Click "Deploy" button (top right)
+2. Click "New deployment"
+3. Click the gear icon and select "Web app"
+4. Set these options:
+   - Description: "Contact Form Handler"
+   - Execute as: "Me"
+   - Who has access: "Anyone"
+5. Click "Deploy"
+6. Click "Authorize access" and allow permissions
+7. Copy the Web App URL (looks like: https://script.google.com/macros/s/AKfycb.../exec)
+
+STEP 6: Update script.js
+------------------------
+In your script.js file, replace this line:
+const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbwYOUR_SCRIPT_ID_HERE/exec';
+
+With your actual Web App URL:
+const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/YOUR_ACTUAL_URL/exec';
+
+DONE! Your form will now submit data to Google Sheets.

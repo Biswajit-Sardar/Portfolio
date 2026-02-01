@@ -319,18 +319,16 @@ function initCarousel() {
 
 function updateCarousel() {
     const cards = servicesTrack.querySelectorAll('.service-card');
-    const card = cards[0];
-    if (!card) return;
+    if (!cards.length) return;
     
-    const cardWidth = card.offsetWidth;
-    const gap = 0;
+    // Calculate offset based on 100% width per card
+    const offset = currentSlide * 100;
+    servicesTrack.style.transform = `translateX(-${offset}%)`;
     
-    const offset = currentSlide * (cardWidth + gap);
-    servicesTrack.style.transform = `translateX(-${offset}px)`;
-    
+    // Only current card is active
     cards.forEach((c, index) => {
         c.classList.remove('active');
-        if (index >= currentSlide && index < currentSlide + getVisibleCards()) {
+        if (index === currentSlide) {
             c.classList.add('active');
         }
     });
@@ -343,13 +341,12 @@ function updateCarousel() {
     }
     
     if (prevBtn) prevBtn.disabled = currentSlide === 0;
-    if (nextBtn) nextBtn.disabled = currentSlide >= totalCards - getVisibleCards();
+    if (nextBtn) nextBtn.disabled = currentSlide >= totalCards - 1;
 }
 
 function getVisibleCards() {
-    if (window.innerWidth <= 768) return 1;
-    if (window.innerWidth <= 1024) return 2;
-    return 3;
+    // Always show 1 card at a time on all devices
+    return 1;
 }
 
 function goToSlide(index) {

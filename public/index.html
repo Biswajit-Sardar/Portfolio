@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biswajit Sardar | Data Scientist & Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Biswajit Sardar - Data Scientist, AI Enthusiast, and Full Stack Developer">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Click Sound -->
+    <audio id="clickSound" preload="auto">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 3D Animated Background -->
+    <div class="animated-bg">
+        <div class="cube cube-1"></div>
+        <div class="cube cube-2"></div>
+        <div class="cube cube-3"></div>
+        <div class="cube cube-4"></div>
+        <div class="cube cube-5"></div>
+        <div class="floating-sphere sphere-1"></div>
+        <div class="floating-sphere sphere-2"></div>
+        <div class="floating-sphere sphere-3"></div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo clickable">Biswajit<span>.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active clickable">Home</a></li>
+                <li><a href="#about" class="clickable">About</a></li>
+                <li><a href="#services" class="clickable">Services</a></li>
+                <li><a href="#skills" class="clickable">Skills</a></li>
+                <li><a href="#projects" class="clickable">Projects</a></li>
+                <li><a href="#contact" class="clickable">Contact</a></li>
+            </ul>
+            <a href="https://www.linkedin.com/in/biswajit-sardar-b9aa36303/" class="btn btn-primary nav-btn clickable">Hire Me</a>
+            <button class="mobile-menu-btn clickable" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+   <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">BISWAJIT SARDAR</h1>
+                <div class="hero-typing">
+                    <span>I'm a </span>
+                    <span class="typed-text" id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate about transforming data into actionable insights and building 
+                    innovative web solutions. Specializing in Machine Learning, Data Analytics, Power BI
+                    and Full Stack Development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://www.linkedin.com/in/biswajit-sardar-b9aa36303/" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-outline">View Projects</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Biswajit-Sardar" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/biswajit-sardar-b9aa36303/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-bg"></div>
+                    <img src="images/mypic1.png" alt="Biswajit Sardar">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-award"></i>
+                        <span>Data Science Expert</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack Dev</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Tools Slider -->
+    <section class="tools-section">
+        <p class="tools-title">Technologies & Tools I Work With</p>
+        <div class="tools-slider">
+            <div class="tools-track">
+                <div class="tool-item tool-3d"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="tool-item tool-3d"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="tool-item tool-3d"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="tool-item tool-3d"><i class="fab fa-python"></i> Python</div>
+                <div class="tool-item tool-3d"><i class="fas fa-database"></i> SQL</div>
+                <div class="tool-item tool-3d"><i class="fab fa-java"></i> Java</div>
+                <div class="tool-item tool-3d"><i class="fab fa-react"></i> React</div>
+                <div class="tool-item tool-3d"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                <div class="tool-item tool-3d"><i class="fab fa-figma"></i> Figma</div>
+                <div class="tool-item tool-3d"><i class="fas fa-brain"></i> LLM</div>
+                <div class="tool-item tool-3d"><i class="fas fa-chart-bar"></i> Power BI</div>
+                <div class="tool-item tool-3d"><i class="fas fa-file-excel"></i> Excel</div>
+                <!-- Duplicate for infinite scroll -->
+                <div class="tool-item tool-3d"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="tool-item tool-3d"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="tool-item tool-3d"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="tool-item tool-3d"><i class="fab fa-python"></i> Python</div>
+                <div class="tool-item tool-3d"><i class="fas fa-database"></i> SQL</div>
+                <div class="tool-item tool-3d"><i class="fab fa-java"></i> Java</div>
+                <div class="tool-item tool-3d"><i class="fab fa-react"></i> React</div>
+                <div class="tool-item tool-3d"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                <div class="tool-item tool-3d"><i class="fab fa-figma"></i> Figma</div>
+                <div class="tool-item tool-3d"><i class="fas fa-brain"></i> LLM</div>
+                <div class="tool-item tool-3d"><i class="fas fa-chart-bar"></i> Power BI</div>
+                <div class="tool-item tool-3d"><i class="fas fa-file-excel"></i> Excel</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item stat-3d">
+                <div class="stat-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="stat-number" data-target="1">0</div>
+                <span class="stat-plus">+</span>
+                <p class="stat-label">Years Experience</p>
+            </div>
+            <div class="stat-item stat-3d">
+                <div class="stat-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="stat-number" data-target="15">0</div>
+                <span class="stat-plus">+</span>
+                <p class="stat-label">Projects Completed</p>
+            </div>
+            <div class="stat-item stat-3d">
+                <div class="stat-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-number" data-target="24">0</div>
+                <span class="stat-times">*7</span>
+                <p class="stat-label">Hours Active</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+     <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="about-img-wrapper">
+                    <img src="images/mypic.png" alt="Biswajit Sardar">
+                    <div class="about-img-bg"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-subtitle">About Me</h2>
+                <h3 class="section-title">Clients Get Always Exceptional <span>Works From Me</span></h3>
+                <p class="about-text">
+                    I'm a passionate Data Scientist and Full Stack Developer with expertise in 
+                    transforming complex data into meaningful insights and building robust web applications. 
+                    With a strong foundation in Machine Learning, Deep Learning, and modern web technologies, 
+                    I deliver solutions that drive business growth.
+                </p>
+                <ul class="about-highlights">
+                    <li><i class="fas fa-check-circle"></i> Data-Driven Solutions</li>
+                    <li><i class="fas fa-check-circle"></i> Clean & Efficient Code</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Commitment</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="services-container">
+            <h2 class="section-subtitle center">What I Do</h2>
+            <h3 class="section-title center">My Awesome <span>Services</span></h3>
+            <div class="services-carousel">
+                <button class="carousel-btn carousel-btn-left clickable" id="services-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="services-wrapper">
+                    <div class="services-track" id="services-track">
+                        <div class="service-card service-3d">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h4>Web Design</h4>
+                            <p>Creating modern, responsive, and user-friendly website designs that captivate your audience.</p>
+                            <div class="service-shine"></div>
+                        </div>
+                        <div class="service-card service-3d">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Full Stack Development</h4>
+                            <p>End-to-end web application development using modern frameworks and technologies.</p>
+                            <div class="service-shine"></div>
+                        </div>
+                        <div class="service-card service-3d">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Data Analysis</h4>
+                            <p>Transforming raw data into actionable insights through advanced analytics techniques.</p>
+                            <div class="service-shine"></div>
+                        </div>
+                        <div class="service-card service-3d">
+                            <div class="service-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Machine Learning</h4>
+                            <p>Building predictive models and AI solutions to solve complex business problems.</p>
+                            <div class="service-shine"></div>
+                        </div>
+                        <div class="service-card service-3d">
+                            <div class="service-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>LLM Integration</h4>
+                            <p>Integrating Large Language Models to create intelligent conversational applications.</p>
+                            <div class="service-shine"></div>
+                        </div>
+                        <div class="service-card service-3d">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h4>Data Visualization</h4>
+                            <p>Creating compelling dashboards and reports using Power BI and other visualization tools.</p>
+                            <div class="service-shine"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-right clickable" id="services-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="skills-container">
+            <div class="skills-content">
+                <h2 class="section-subtitle">My Expertise</h2>
+                <h3 class="section-title">Perfect Solution <span>For Your Business</span></h3>
+                <p class="skills-text">
+                    With a diverse skill set spanning from frontend development to machine learning, 
+                    I bring comprehensive solutions to every project.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item skill-3d">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90">
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item skill-3d">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85">
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item skill-3d">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88">
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item skill-3d">
+                    <div class="skill-header">
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85">
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item skill-3d">
+                    <div class="skill-header">
+                        <span class="skill-name">Machine Learning</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80">
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item skill-3d">
+                    <div class="skill-header">
+                        <span class="skill-name">React</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75">
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="projects-container">
+            <h2 class="section-subtitle center">Portfolio</h2>
+            <h3 class="section-title center">Recent <span>Projects</span></h3>
+            <div class="projects-grid">
+                <!-- Data Science Project Card -->
+                <a href="projects/data-science.html" class="project-card project-3d clickable">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="view-projects">View All Projects <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="project-shine"></div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Data Science Project</h4>
+                        <p>Machine Learning & Analytics</p>
+                        <span class="project-count">2 Projects</span>
+                    </div>
+                </a>
+
+                <!-- Full Stack Application Card -->
+                <a href="projects/full-stack.html" class="project-card project-3d clickable">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="view-projects">View All Projects <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="project-shine"></div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Full Stack Application</h4>
+                        <p>React & Node.js</p>
+                        <span class="project-count">2 Projects</span>
+                    </div>
+                </a>
+
+                <!-- Power BI Dashboard Card -->
+                <a href="" class="project-card project-3d clickable">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="view-projects">View All Projects <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="project-shine"></div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Power BI Dashboard</h4>
+                        <p>Data Visualization</p>
+                        <span class="project-count">4 Projects</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-subtitle">Get In Touch</h2>
+                <h3 class="section-title">Ready To Get <span>Started?</span></h3>
+                <p class="contact-text">
+                    You know about me, let's talk about you. Feel free to reach out for collaborations or just a friendly hello!
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item contact-3d">
+                        <i class="fas fa-envelope"></i>
+                        <span>bssb89679297777@gmail.com</span>
+                    </div>
+                    <div class="contact-item contact-3d">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 8967XXXXXX</span>
+                    </div>
+                    <div class="contact-item contact-3d">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kolkata, India</span>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://github.com/Biswajit-Sardar" target="_blank" class="social-3d clickable"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/biswajit-sardar-b9aa36303/" target="_blank" class="social-3d clickable"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="" target="_blank" class="social-3d clickable"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper form-3d">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required class="input-3d clickable">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required class="input-3d clickable">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" class="input-3d clickable">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required class="input-3d clickable"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full btn-3d clickable">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo clickable">Biswajit<span>.</span></a>
+                <p class="footer-text">Transforming data into insights and ideas into reality.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home" class="clickable">Home</a>
+                <a href="#about" class="clickable">About</a>
+                <a href="#services" class="clickable">Services</a>
+                <a href="#projects" class="clickable">Projects</a>
+                <a href="#contact" class="clickable">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/Biswajit-Sardar" target="_blank" class="clickable"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/biswajit-sardar-b9aa36303/" target="_blank" class="clickable"><i class="fab fa-linkedin-in"></i></a>
+                <a href="" target="_blank" class="clickable"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Biswajit Sardar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

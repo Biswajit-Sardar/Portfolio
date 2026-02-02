@@ -1381,6 +1381,22 @@ img {
     box-shadow: var(--shadow-lg);
 }
 
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon i {
+    color: white;
+    font-size: 18px;
+}
+
 .contact-item i {
     width: 45px;
     height: 45px;
@@ -1392,9 +1408,57 @@ img {
     color: white;
 }
 
+.contact-details h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.contact-details p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
 .contact-social {
     display: flex;
     gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-social a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--secondary);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.contact-social a:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: var(--glow-primary);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+@media (max-width: 992px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
 
 .contact-form-wrapper {
